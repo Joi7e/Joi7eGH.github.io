@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="app-header">
+    <span class="app-header__title">To-do List</span>
+    <button class="app-header__clear-btn" id='clearAll'>clear all</button>
+  </header>
+
+  <div class="app-container">
+    <form class="add-item-form" id='addItemForm'>
+      <input class="add-item-form__input" placeholder="enter your new todo" name='newToDo'></input>
+      <button class="add-item-form__add-btn" type="submit">
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="-0.5" x2="6.82407" y2="-0.5"
+            transform="matrix(-0.0217579 -0.999763 0.999763 0.0217579 3.83307 7.09879)" stroke="white" />
+          <line y1="-0.5" x2="6.82407" y2="-0.5"
+            transform="matrix(-0.999763 -0.0217579 -0.0217579 -0.999763 6.82245 3.55673)" stroke="white" />
+        </svg>
+        Add
+      </button>
+    </form>
+
+    <ul class='items-wrapper' id="toDoList">
+
+    </ul>
+
+    <div class="divider-horizontal"></div>
+
+    <ul class='items-wrapper' id="doneList">
+
+    </ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src='script.js'></script>
+</body>
+
+</html>
